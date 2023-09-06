@@ -1,0 +1,170 @@
+:root {
+    --add-btn-BGcolor: rgb(117, 117, 255);
+    --list-Bgcolor: rgba(138, 130, 255, 0.158);
+    --place-Holder-Colour: rgba(128, 128, 128, 0.361);
+    --border-Color: black;
+    --to-do-list-bg-color:rgb(255, 255, 255);
+    --body-color:rgb(205, 250, 255);
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--body-color);
+    align-items: center;
+}
+
+.to-Do-List {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 3rem;
+    border: 3px solid black;
+    background-color: var(--to-do-list-bg-color);
+    border-radius: 5px;
+    padding: 3rem;
+    margin: 1rem;
+}
+
+.todo-Add-Container {
+    margin-top: 2rem;
+}
+
+.input-Text-Todo {
+    width: 35rem;
+    height: 3.3rem;
+    padding: 0.8rem;
+    border: .2rem solid var(--border-Color);
+    border-radius: 8px;
+}
+
+::placeholder {
+    color: var(--place-Holder-Colour);
+    font-size: 1.5rem;
+}
+
+.todo-Add-Btn {
+    padding: 0.8rem;
+    border-radius: 6px;
+    background: var(--add-btn-BGcolor);
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: rgb(0, 3, 255);
+    background: linear-gradient(0deg, rgba(0, 3, 255, 1) 0%, rgba(2, 126, 251, 1) 100%);
+}
+
+.todo-Add-Btn:hover {
+    background: rgb(6, 14, 131);
+    background: linear-gradient(0deg, rgba(6, 14, 131, 1) 0%, rgba(12, 25, 180, 1) 100%);
+}
+
+.list-Container {
+    /* border: 2px solid black;  */
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+.list-Itomes {
+    font-size: 1.5rem;
+    padding: 1rem 1.3rem;
+    margin-top: 1rem;
+    width: 58rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--list-Bgcolor);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.checkbox-And-List-Text-Container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-And-List-Itomes-Text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox {
+    margin-right: 10px;
+    transform: scale(1.211);
+    border: 2px solid black;
+}
+
+.edit-And-Delete-Btn-Container {
+    display: flex;
+}
+
+.delete,
+.edit {
+    background: none;
+    border: none;
+}
+
+.delete svg,
+.edit svg {
+    display: flex;
+    width: 2rem;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 670px) {
+    html {
+        font-size: 50%;
+    }
+
+    .list-Itomes {
+        width: 37rem;
+    }
+}
+
+@media screen and (max-width: 471px) {
+    html {
+        font-size: 45%;
+    }
+.to-Do-List{
+    border: none;
+}
+    .todo-Add-Container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .todo-Add-Btn {
+        margin-top: 1rem;
+    }
+
+    .list-Itomes {
+        width: 34rem;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+    .to-Do-List {
+        padding: 0.8rem;
+        border: none;
+    }
+}
+@media screen and (min-width: 1400px) {
+    html{
+        font-size: 85%;
+    }
+}

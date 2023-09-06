@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- INCLUDING FAVICON  -->
+    <link rel="shortcut icon" href="icons/Favicon.svg" type="image/x-icon">
+
+    <!-- INCLUDING EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>TO DO LIST</title>
+</head>
+
+<body>
+    <main class="to-Do-List">
+        <div class="todo-Add-Container">
+            <input type="text" placeholder="Enter todo here!" name="input-Text-Todo" id="input-Text-Todo" class="input-Text-Todo">
+            <button class="todo-Add-Btn" onclick="addtodo()">ADD TODO</button>
+        </div>
+
+        <div class="list-Container">
+            <!-- <h2 class="list-Container-Heding">list-Container</h2> -->
+            <ul class="list-Container-Ul">
+
+            </ul>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
